@@ -1,0 +1,16 @@
+XC4630(ILI9341), ESP32, function
+D0, GPIO12, Bit 0
+D1, GPIO13, Bit 1
+D2, GPIO26, Bit 2
+D3, GPIO25, Bit 3
+D4, GPIO33, Bit 4
+D5, GPIO32, Bit 5
+D6, GPIO14, Bit 6
+D7, GPIO27, Bit 7
+CS, GPIO15, Chip Select (LOW = Active)
+WR, GPIO17, Write
+RD, GPIO16, Read (LOW = Read, HIGH = Write)
+RS, GPIO5, Register Select (LOW = Command, HIGH = Data)
+RST, GPIO23, Reset (LOW = Reset)
+VCC, 3.3V, Power
+GND, GND, GND

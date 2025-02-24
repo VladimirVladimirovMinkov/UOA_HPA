@@ -1,0 +1,96 @@
+High Priority:
+Select an Airspeed indicator - pitot tube assembly
+https://nz.element14.com/nxp/mpxv7002dp/sensor-pressure-dual-diff-0-02bar/dp/2080499
+https://www.aliexpress.com/item/1005005646318954.html?src=google&pdp_npi=4@dis!NZD!19.65!11.91!!!!!@!12000033872087723!ppc!!!
+2 pins
+
+Select a Cadence measuring system (sensors) - 
+https://surplustronics.co.nz/products/2858-hall-effect-sensor-a3144-a3144e
+1 rotation = 2 steps
+needs magnet(s)
+1 pin
+
+Select servos (could use the same ones used last time) - use the same ones as last time or buy https://surplustronics.co.nz/products/6174-servo-digital-metal-servo-13kgcm-mg995
+1x3 = 3 pins
+
+each servo needs up to 1.5A at 5V
+https://www.aliexpress.com/item/1005003380492497.html?spm=a2g0o.productlist.main.25.3a317bc0q1JziO&algo_pvid=928418e3-2a8e-4f53-80fa-07c26ea8ca2a&algo_exp_id=928418e3-2a8e-4f53-80fa-07c26ea8ca2a-12&pdp_ext_f=%7B%22order%22%3A%2268%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21NZD%214.01%212.80%21%21%212.26%211.58%21%40%2112000025511836586%21sea%21NZ%210%21ABX&curPageLogUid=YJVC8KFdrfck&utparam-url=scene%3Asearch%7Cquery_from%3A
+
+https://surplustronics.co.nz/products/1741-lm7805-1-amp-ve-5v
+
+Write up short report doing some math justifying the torque on these motors -
+Math from before and the EASA microlight specs and the servo selection table math and safety factor of at least 1.5x
+
+Select a lightweight but big display for real time updates - servo mounted on screen or 
+https://surplustronics.co.nz/products/10716-blue-oled-lcd-display-module-128x64-096-inch-?gStoreCode=08500591838306866804
+2 pins
+if that's too small or if a couple together can't fit on a board
+https://www.jaycar.co.nz/duinotech-arduino-compatible-2-5-inch-colour-lcd-touch-screen-display/p/XC4630
+6 pins for display only 2 pins for SD card
+
+https://forum.arduino.cc/t/reading-data-from-a-sensor-over-i2c-interupts-my-display-output/1081907/6
+
+tutorial
+
+big but not light weight 7' we don't need something bigger then this period. (unless it's for the ground station)
+https://www.aliexpress.com/item/1005006471099177.html?spm=a2g0o.detail.pcDetailTopMoreOtherSeller.3.2c915gn55gn5cK&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40050.354490.0&scm_id=1007.40050.354490.0&scm-url=1007.40050.354490.0&pvid=f4fbe6a5-cb32-471b-ba21-d99bef410eae&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40050.354490.0,pvid:f4fbe6a5-cb32-471b-ba21-d99bef410eae,tpp_buckets:668%232846%238114%231999&pdp_npi=4%40dis%21NZD%2174.43%2140.93%21%21%21300.62%21165.34%21%402103209b17387310687954766e41cb%2112000037319951906%21rec%21NZ%21%21ABX&utparam-url=scene%3ApcDetailTopMoreOtherSeller%7Cquery_from%3A
+
+
+Select a joystick (requirements is mostly easy for pilot to use and provides some resistance/ ie not too sensitive)
+Piston(maybe constant force) with a lever on an axel
+
+	side on	<-\->  pitch   		  head on  <-|-> yaw
+lever on axel 	 --D           			axel o <- this spins
+
+using a tilt sensor for both pitch and yaw 1 pin each for 2 pins
+
+
+Choose an SD card reader (figure out how much data is actually expected to be stored on it per flight)
+https://surplustronics.co.nz/products/12112-sd-card-module-for-arduino if needed
+with a 2GB SD card and 1 update of full screen pixel and color depth per second is worth just under half an hour
+2 pins
+
+
+Figuring out our requirements are important as this would indicate what type of chip we need and how components will interface with the chip and each other
+
+
+total 16 pins
+Battery level and instrumentation checking can be done separately from control systems but it would need 1 pin each 
+totaling to 18 pins or 16 if the battery level and instrumentation checks are done by the diagnostic instrumentation/kit
+Arduino is small and slow but workable for our purposes(at least for now)
+esp32-wroom-32 has 23 usable GPIO pins (says more but some are boot pins that cause problems when used or for 1 use)
+STM needs Mbed or Em bed but similar to Arduino 
+NRF best for our use case but not user friendly 
+Regardless of what chip we use, we will need a small heat radiator/sink 
+
+
+Mid Priority:
+Pick a chip that we could all use
+Create a data budget for everything getting stored on the SD card (might be overkill if flight isn't very long)
+Pick a battery for supply -> lil voltage regulator
+Figure out what is needed for the linkage system / the actual control surfaces
+should figure out range of motion on these and have some system that doesn't let them exceed these limits
+Design a diagnostic check display that is modular and can be removed preflight -> diagnostic instruments/kit
+checks battery levels, servo function, joystick control and all other instruments -> diagnostic instruments/kit
+
+the diagnostic instruments/kit is an added device to the connector port that connects to the calibration/test systems and the control systems to check all equipment is functioning and checks battery levels
+
+
+Low Priority :
+Eventually for PCB need to select the following, best to have an idea of what the requirements for each are
+GPS -> just get a GPS from surplustronics and log to SD card -> not the same as Altimeter
+Altimeter + an external IR or similar sensor to validate take-off time -> 2nd pitot tube + strain sensor on wheel 
+external ADC for noise reduction or capacitors / lowpass filter type shenanigans -> yes also inductors and multi sampling
+Molex / RJ45 / whatever connector we wanna use (i can steal these from work for free so good to know which is best)
+Molex for battery charging, RJ45 is harder and no charging, m12 is optimal but can be replaced by a Molex with a Bung
+We need 4 pins minimum up to 8 for the connector
+
+
+Considerations for later:
+Using Bluetooth/RF stuff
+Using buttons for control
+Mounting for all these systems
+Pilot interface
+Control surfaces
+Servos and battery
+Harnessing

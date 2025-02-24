@@ -1,0 +1,98 @@
+Ps = Static Pressure = gotten from BME covered in fabric to prevent air speed from affecting it in hPa
+Pt = pitot tube pressure = gotten from air diff sensor at end of pitot tube in hPa
+Psl = Pressure at sea level = 1015hPa or manually programmed in on the day of flight
+RPM = hall effect sensor times tigered over 1s averaged over 10 intervals
+
+Pwv = Pressure of water vapor = 0.01 * H * 6.1121 * exp( (18.678 - T(C)/234.5) * T(c)/(257.14+T) )
+Ad = Air Density = (Ps-Pwv)*100 / (287.05*(T(c)+273.15)) + Pwv*100 / (461.495*(T(c)+273.15)
+
+
+Airspeed(m/s) = sqrt(200*(Pt - Ps)/Ad)
+Altitude(m) = (Psl - Ps)*10
+Orientation = Gyroscope + accelerometer for roll and pitch maybe displayed from behind the air craft
+Vertical speed(m/s) = dAltitude maybe assisted with a accelerometer
+Temperature(C) = temp sensor
+Humidity(%) = humidity sensor
+Battery level(%) = voltage level
+Time from launch(mmm::ss) (Once RPM is high enough) = internal clock
+Watts = RPM* 200*0.16/10
+
+
+
+New servo
+https://www.rcinnovations.co.nz/servos/4229-ecopower-wp110t-cored-waterproof-high-torque-metal-gear-digital-servo-.html
+
+
+list:
+pitot tube assembly + diff sensor = mpxv7002dp
+https://nz.element14.com/nxp/mpxv7002dp/sensor-pressure-dual-diff-0-02bar/dp/2080499
+https://www.aliexpress.com/item/1005005646318954.html?src=google&pdp_npi=4@dis!NZD!19.65!11.91!!!!!@!12000033872087723!ppc!!!
+
+Static air Pressure sensor = BME280 + cloth covering
+temp sensor = BME280
+humidity sensor = BME280
+https://epartners.co.nz/products/bme-280-spi-i2c-humidity-temperature-and-barometric-pressure-sensor
+
+Gyroscope + accelerometer = GY521 module MPU6050
+https://surplustronics.co.nz/products/6169-accelerometer-gyroscope-gy521-module-mpu6050
+
+candace sensor = hall effect on pedal
+https://surplustronics.co.nz/products/2858-hall-effect-sensor-a3144-a3144e
+https://surplustronics.co.nz/products/5300-neo-rare-earth-magnet
+
+
+main body:
+
+Select an Airspeed indicator - pitot tube assembly
+https://nz.element14.com/nxp/mpxv7002dp/sensor-pressure-dual-diff-0-02bar/dp/2080499
+https://www.aliexpress.com/item/1005005646318954.html?src=google&pdp_npi=4@dis!NZD!19.65!11.91!!!!!@!12000033872087723!ppc!!!
+2 pins
+
+Select a Cadence measuring system (sensors) - 
+https://surplustronics.co.nz/products/2858-hall-effect-sensor-a3144-a3144e
+1 rotation = 2 steps
+needs magnet(s)
+1 pin
+
+Select servos (could use the same ones used last time) - use the same ones as last time or buy https://surplustronics.co.nz/products/6174-servo-digital-metal-servo-13kgcm-mg995
+1x3 = 3 pins
+
+Write up short report doing some math justifying the torque on these motors -
+Math from before and the EASA microlight specs and the servo selection table math and safety factor of at least 1.5x
+
+Select a lightweight but big display for real time updates - servo mounted on screen or 
+https://surplustronics.co.nz/products/10716-blue-oled-lcd-display-module-128x64-096-inch-?gStoreCode=08500591838306866804
+2 pins
+if that's too small or if a couple together can't fit on a board
+https://www.jaycar.co.nz/duinotech-arduino-compatible-2-5-inch-colour-lcd-touch-screen-display/p/XC4630
+6 pins for display only 2 pins for SD card
+
+big but not light weight 7' we don't need something bigger then this period. (unless it's for the ground station)
+https://www.aliexpress.com/item/1005006471099177.html?spm=a2g0o.detail.pcDetailTopMoreOtherSeller.3.2c915gn55gn5cK&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40050.354490.0&scm_id=1007.40050.354490.0&scm-url=1007.40050.354490.0&pvid=f4fbe6a5-cb32-471b-ba21-d99bef410eae&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40050.354490.0,pvid:f4fbe6a5-cb32-471b-ba21-d99bef410eae,tpp_buckets:668%232846%238114%231999&pdp_npi=4%40dis%21NZD%2174.43%2140.93%21%21%21300.62%21165.34%21%402103209b17387310687954766e41cb%2112000037319951906%21rec%21NZ%21%21ABX&utparam-url=scene%3ApcDetailTopMoreOtherSeller%7Cquery_from%3A
+
+
+Select a joystick (requirements is mostly easy for pilot to use and provides some resistance/ ie not too sensitive)
+Piston(maybe constant force) with a lever on an axel
+
+	side on	<-\->  pitch   		  head on  <-|-> yaw
+lever on axel 	 --D           			axel o <- this spins
+
+using a tilt sensor for both pitch and yaw 1 pin each for 2 pins
+
+
+Choose an SD card reader (figure out how much data is actually expected to be stored on it per flight)
+https://surplustronics.co.nz/products/12112-sd-card-module-for-arduino if needed
+with a 2GB SD card and 1 update of full screen pixel and color depth per second is worth just under half an hour
+2 pins
+
+
+total 16 pins
+Battery level and instrumentation checking can be done separately from control systems but it would need 1 pin each
+totaling to 18 pins or 16 if the battery level and instrumentation checks are done by the diagnostic instrumentation/kit
+Arduino is small and slow but workable for our purposes(at least for now)
+esp32-wroom-32 has 23 usable GPIO pins (says more but some are boot pins that cause problems when used or for 1 use)
+STM needs Mbed or Embed but similar to Arduino
+NRF best for our use case but not user friendly
+Regardless of what chip we use, we will need a small heat radiator/sink
+
+https://surplustronics.co.nz/products/11668-esp32-development-board-ch9102x

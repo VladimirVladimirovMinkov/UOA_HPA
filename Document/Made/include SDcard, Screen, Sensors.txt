@@ -1,0 +1,29 @@
+//include SDcard, Screen, Sensors
+
+void setup() {
+    //initialize SDcard, Screen, Sensors
+}
+
+void useLCD() {
+    digitalWrite(15, LOW);  // LCD active
+    digitalWrite(2, HIGH);  // SD card inactive
+    
+    // Your LCD code here
+    
+    digitalWrite(15, HIGH); // LCD inactive
+}
+
+void useSD() {
+    digitalWrite(15, HIGH); // LCD inactive
+    digitalWrite(2, LOW);   // SD card active
+    
+    // Your SD card code here
+    
+    digitalWrite(2, HIGH);  // SD card inactive
+}
+
+void main() {
+    // get sensor data 0 to n 
+    useLCD(); // print data
+    useSD(); // save data
+}
