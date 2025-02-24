@@ -7,7 +7,7 @@ This is a code and document repository for the University of auckland Aeronaught
 Repository Structure:
 * Documents: This folder contains documents and reports made relating to the HPA
 * CAD: Contains Computer Aided Design projects such as SOLIDWORKS or KiCAD
-* Src: This is for the code for the control systems and input mapping
+* src: This is for the code for the control systems and input mapping
 * Test: This is the RnD folder for prototypes and demos that don't 100% work
 
 # Getting involved
