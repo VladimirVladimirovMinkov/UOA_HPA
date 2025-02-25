@@ -1,1 +1,7 @@
-When we get the circuits decided
+ESP32
+
+5x servos https://www.pakronics.com.au/products/meds15-servo-motor-mb80802?currency=AUD&utm_source=google&utm_medium=cpc&utm_campaign=Google+Shopping&stkn=ab501cb52a9b
+
+5x servos voltage regulators https://www.jaycar.co.nz/7806-6v-1a-voltage-regulator/p/ZV1506
+3v3 logic voltage https://nz.mouser.com/ProductDetail/Texas-Instruments/TPS7B8633BQDDARQ1?qs=ulEaXIWI0c8jShQv7JB9Ew%3D%3D
+5v logic voltage https://www.jaycar.co.nz/7805-5v-1a-voltage-regulator-to-220-case/p/ZV1505
