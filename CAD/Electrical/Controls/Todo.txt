@@ -1,0 +1,16 @@
+Now:
+1. Change Devkit to ESP32 WROOM chip (GPIO pins don't need to be changed, just transferred over for the different pin layout)
+2. Decide on the servo (the previously recommended servo is no longer in production or sale)
+3. Voltage regulators 
+	6V to 4V for each servo
+	3.3V esp32, I2C devices, SPI devices and controls
+	5V for pitot tube
+
+4. Draw up PCB
+5. Review
+
+Later:
+1. Print PCB
+2. Solder
+3. Code
+4. Test

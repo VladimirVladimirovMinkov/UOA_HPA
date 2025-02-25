@@ -2654,6 +2654,18 @@
 		(uuid "d885364a-8c74-4e6a-ad57-f12f08e3a225")
 	)
 	(junction
+		(at 182.88 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d931ecdb-d036-4ba2-be7e-7a3cd086713d")
+	)
+	(junction
+		(at 179.07 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d9bd3a58-dea9-403a-af4d-f9d480d73a88")
+	)
+	(junction
 		(at 205.74 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2694,6 +2706,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f6cf3532-01f9-4c00-af9d-36b10130c3d2")
+	)
+	(junction
+		(at 175.26 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fa3dd2fe-9b70-40bc-82c0-312539b96b04")
 	)
 	(junction
 		(at 151.13 129.54)
@@ -2939,6 +2957,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 102.87) (xy 205.74 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1be955a5-8b7d-4282-832f-e5897168e34c")
+	)
+	(wire
+		(pts
 			(xy 64.77 158.75) (xy 64.77 160.02)
 		)
 		(stroke
@@ -3026,6 +3054,16 @@
 			(type default)
 		)
 		(uuid "2250cc50-878c-4258-b451-d8843c42d690")
+	)
+	(wire
+		(pts
+			(xy 179.07 110.49) (xy 182.88 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "225a23eb-073f-4584-afc3-aed6b44aef53")
 	)
 	(wire
 		(pts
@@ -3709,6 +3747,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 95.25) (xy 179.07 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f2807ac-7bce-4dde-9a34-108d7724db94")
+	)
+	(wire
+		(pts
 			(xy 118.11 132.08) (xy 118.11 87.63)
 		)
 		(stroke
@@ -3769,13 +3817,13 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 163.83) (xy 179.07 95.25)
+			(xy 175.26 110.49) (xy 179.07 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "78bf4bcb-24c7-4270-a493-0bf3343ed04f")
+		(uuid "7807011c-3734-42e2-8359-557de309ca5e")
 	)
 	(wire
 		(pts
@@ -3969,6 +4017,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 102.87) (xy 182.88 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9370a16c-e977-4b1a-8f50-032592919da6")
+	)
+	(wire
+		(pts
 			(xy 110.49 58.42) (xy 110.49 59.69)
 		)
 		(stroke
@@ -4086,6 +4144,16 @@
 			(type default)
 		)
 		(uuid "a24565a7-ecb1-4823-ab44-168b005f1907")
+	)
+	(wire
+		(pts
+			(xy 179.07 163.83) (xy 179.07 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3d37e39-e4c4-4d79-80f6-6677b760b7e7")
 	)
 	(wire
 		(pts
@@ -4599,7 +4667,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 102.87) (xy 205.74 102.87)
+			(xy 163.83 102.87) (xy 175.26 102.87)
 		)
 		(stroke
 			(width 0)
@@ -4746,6 +4814,144 @@
 			(type default)
 		)
 		(uuid "ffe71eeb-6fb2-43b4-a53b-25753d6d1889")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 182.88 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "08046d9d-1e4d-44f9-9685-68f5498322f6")
+		(property "Reference" "C3"
+			(at 186.436 106.934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Pitot capacitor"
+			(at 183.134 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 183.8452 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 182.88 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 182.88 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6ea6b067-0723-47d5-81cc-572e2a3c8c87")
+		)
+		(pin "1"
+			(uuid "c184da95-7bbc-46a1-b470-3bb77694de69")
+		)
+		(instances
+			(project "Controls"
+				(path "/005152ff-5733-456f-9ae4-b802d9decb8d"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 179.07 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0ccfe4f5-85a2-4367-b02a-8cd3cbc3f4ce")
+		(property "Reference" "R10"
+			(at 180.594 113.284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VD pitot 12k"
+			(at 180.34 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical"
+			(at 177.292 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 179.07 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7540ffb2-625f-48ee-a5fc-78f432e41689")
+		)
+		(pin "2"
+			(uuid "9762dcf8-19e3-4235-b51c-34304a03e5bb")
+		)
+		(instances
+			(project "Controls"
+				(path "/005152ff-5733-456f-9ae4-b802d9decb8d"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
@@ -5003,6 +5209,75 @@
 			(project "Controls"
 				(path "/005152ff-5733-456f-9ae4-b802d9decb8d"
 					(reference "J13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 175.26 106.68 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "30b80c76-bd32-4df2-bf3d-a610a57a97aa")
+		(property "Reference" "R11"
+			(at 173.482 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VD pitot 23.3k"
+			(at 175.514 110.744 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical"
+			(at 177.038 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 175.26 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d57aa662-0570-45f1-866f-be59a0f05a28")
+		)
+		(pin "2"
+			(uuid "9670d2c7-3e63-499d-9c27-b1002579d81d")
+		)
+		(instances
+			(project "Controls"
+				(path "/005152ff-5733-456f-9ae4-b802d9decb8d"
+					(reference "R11")
 					(unit 1)
 				)
 			)
