@@ -14,29 +14,26 @@
 'Roll Control Connector' '1' 1x3
 'SD card selecting jumper' '1'
 'SD card selecting connector' '3' 1x3
-
-'Battery 3.6V' '1'
-'Battery Connector' '1' 1x4
-
+'Battery 3.6V' '4' 4 batteries minimum get 6
+'Battery Connector' '1' 1x4 we can use a 1x2 if we don't install an onboard charger and make out own battery pack easy enough to do
 'Restart/Boot Button' '1'
 'GPS' '1'
-'Cadence Sensor' '1'
+'GPS Connector' '1' 1x4
+'Cadence Sensor Hall Effect' '1'
+'Cadence Sensor Connector' '1' 1x3
+'Gyroscope Connector' '1' 1x4
 'Gyroscope' '1'
 'LCD' '1'
+'LCD connector' '1' 1x15 or break it up
 'pitot tube assembly' '1'
-'LR Jumper 0ohm' '1'
-'Grounding Jumper' '1'
-'I2C Jumper 0ohm' '1'
-'CS pullup 10k' '2'
-'Hall pullup 10k' '1'
-'Potentiometer added resistance 1k' '2'
-'Reset Pullup 10k' '1'
-'VD pitot 12k' '1'
-'VD pitot 23.3k' '1'
-'3.5k battery voltage divider' '1'
-'1k battery voltage divider' '1'
-'ESP32-C3-DevKitM-1' '1'
+'pitot tube assembly Connector' '1' 1x3
+'0ohm Jumper' '3' wire or 0ohm resistor or solder connection
+'10k resistor' '4'
+'1k resistor' '3'
+'12k resistor' '1'
+'23.3k resistor' '1'
+'3.5k resistor' '1'
 '5V regulator' '1'
-'3-6V to 6V DC/DC converter' '1'
 '3V3 regulator' '1'
+'3-6V to 6V DC/DC converter' '1'
 'ESP32-WROOM-32E' '1'
