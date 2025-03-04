@@ -1,39 +1,42 @@
-Hall capacitor 4.7uf 1
-Reset Capacitor 4.7uf 1
-Pitot capacitor 1
-5v cap 4.7uf 1
-5v cap 10uf 1
-6v cap 4.7uf 5
-6v cap 10uf 5
-3v3 cap 4.7uf 1
-3v3 cap 10uf 1
-10uf 2
-Aileron Servo 2 https://www.pakronics.com.au/products/meds15-servo-motor-mb80802?currency=AUD&utm_source=google&utm_medium=cpc&utm_campaign=Google+Shopping&stkn=ab501cb52a9b
-SD card 1
-External Connector 1
-Rudder Servo 1 https://www.pakronics.com.au/products/meds15-servo-motor-mb80802?currency=AUD&utm_source=google&utm_medium=cpc&utm_campaign=Google+Shopping&stkn=ab501cb52a9b
-Elevator Servo 2 https://www.pakronics.com.au/products/meds15-servo-motor-mb80802?currency=AUD&utm_source=google&utm_medium=cpc&utm_campaign=Google+Shopping&stkn=ab501cb52a9b
-BME280 1
-Pitch Control 1
-Roll Control 1
-SD card selecting jumper 3
-Battery and/or BMS 1
-Restart/Boot Button 1
-GPS 1
-Cadence Sensor 1
-Gyroscope 1
-LCD 1
-pitot tube assembly 1
-LR Jumper 0ohm 1
-Grounding Jumper 1
-I2C Jumper 0ohm 1
-CS pullup 10k 2
-Hall pullup 10k 1
-Potentiometer added resistance 1k 2
-Reset Pullup 10k 1
-VD pitot 12k 1
-VD pitot 23.3k 1
-5V regulator 1 https://www.jaycar.co.nz/7805-5v-1a-voltage-regulator-to-220-case/p/ZV1505
-6V regulator 5 https://www.jaycar.co.nz/7806-6v-1a-voltage-regulator/p/ZV1506
-3V3 regulator 1 https://nz.mouser.com/ProductDetail/Texas-Instruments/TPS7B8633BQDDARQ1?qs=ulEaXIWI0c8jShQv7JB9Ew%3D%3D
-ESP32-WROOM-32E 1
+'Value' 'Qty'
+'4.7uf Capacitor' '4'
+'10uf Capacitor' '5'
+'Elevator Servo Connector' '2' 1x3
+'Rudder Servo Connector' '2' 1x3
+'Servo' '2'
+'SD card reader' '1'
+'SD card Connector' '1' 1x6
+'External Connector' '1' 1x4
+'BME280' '1'
+'BME280 Connector' '1' 1x4
+'potentiometer' '2'
+'Pitch Control Connector' '1' 1x3
+'Roll Control Connector' '1' 1x3
+'SD card selecting jumper' '1'
+'SD card selecting connector' '3' 1x3
+
+'Battery 3.6V' '1'
+'Battery Connector' '1' 1x4
+
+'Restart/Boot Button' '1'
+'GPS' '1'
+'Cadence Sensor' '1'
+'Gyroscope' '1'
+'LCD' '1'
+'pitot tube assembly' '1'
+'LR Jumper 0ohm' '1'
+'Grounding Jumper' '1'
+'I2C Jumper 0ohm' '1'
+'CS pullup 10k' '2'
+'Hall pullup 10k' '1'
+'Potentiometer added resistance 1k' '2'
+'Reset Pullup 10k' '1'
+'VD pitot 12k' '1'
+'VD pitot 23.3k' '1'
+'3.5k battery voltage divider' '1'
+'1k battery voltage divider' '1'
+'ESP32-C3-DevKitM-1' '1'
+'5V regulator' '1'
+'3-6V to 6V DC/DC converter' '1'
+'3V3 regulator' '1'
+'ESP32-WROOM-32E' '1'
