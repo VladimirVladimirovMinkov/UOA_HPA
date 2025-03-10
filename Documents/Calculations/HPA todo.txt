@@ -10,7 +10,7 @@ https://surplustronics.co.nz/products/2858-hall-effect-sensor-a3144-a3144e
 needs magnet(s)
 1 pin
 
-Select servos (could use the same ones used last time) - use the same ones as last time or buy https://surplustronics.co.nz/products/6174-servo-digital-metal-servo-13kgcm-mg995
+Select servos (could use the same ones used last time) - use the same ones as last time or buy https://www.rcinnovations.co.nz/servos/4229-ecopower-wp110t-cored-waterproof-high-torque-metal-gear-digital-servo-.html
 1x3 = 3 pins
 
 each servo needs up to 1.5A at 5V

@@ -1,0 +1,33 @@
+Capacitors 3*10 = 30g
+resistor 13*2 = 26g
+
+connectors 40*10 = 50g
+Servo 53*4 = 212g
+SD card reader 50g
+BME280 22g
+potentiometer 2*6 = 12g
+Battery 2*50 = 100g
+Button 2*10 = 20g
+
+GPS 20g
+Cadence Sensor Hall Effect Sensor 17g
+magnets 4*5 = 20g
+Gyroscope 10g
+LCD 50g
+pitot tube assembly 28g
+pressure differential sensor 3g
+
+
+
+5V regulator 8g
+3V3 regulator 8g
+
+3-6V to 6V DC/DC converter 15g
+ESP32-WROOM-32E 22g
+
+PCB 80g
+wiring 20*3.7 74g
+
+total 877g
+
+we can reduce this by 100g to 200g using surface mount components 
