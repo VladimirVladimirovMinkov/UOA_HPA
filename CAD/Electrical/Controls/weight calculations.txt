@@ -1,7 +1,6 @@
 Capacitors 3*10 = 30g
 resistor 13*2 = 26g
 
-connectors 40*10 = 50g
 Servo 53*4 = 212g
 SD card reader 50g
 BME280 22g
@@ -17,8 +16,6 @@ LCD 50g
 pitot tube assembly 28g
 pressure differential sensor 3g
 
-
-
 5V regulator 8g
 3V3 regulator 8g
 
@@ -27,6 +24,7 @@ ESP32-WROOM-32E 22g
 
 PCB 80g
 wiring 20*3.7 74g
+connectors 40*10 = 50g
 
 total 877g
 

@@ -4607,7 +4607,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 158.75) (xy 64.77 160.02)
+			(xy 64.77 158.75) (xy 64.77 162.56)
 		)
 		(stroke
 			(width 0)
@@ -4897,7 +4897,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 160.02) (xy 52.07 158.75)
+			(xy 52.07 162.56) (xy 52.07 158.75)
 		)
 		(stroke
 			(width 0)
@@ -5807,7 +5807,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 161.29) (xy 69.85 160.02)
+			(xy 69.85 161.29) (xy 69.85 162.56)
 		)
 		(stroke
 			(width 0)
@@ -5967,7 +5967,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 161.29) (xy 81.28 161.29)
+			(xy 69.85 161.29) (xy 77.47 161.29)
 		)
 		(stroke
 			(width 0)
@@ -5997,7 +5997,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 156.21) (xy 67.31 160.02)
+			(xy 67.31 156.21) (xy 67.31 162.56)
 		)
 		(stroke
 			(width 0)
@@ -6197,7 +6197,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 158.75) (xy 57.15 160.02)
+			(xy 57.15 158.75) (xy 57.15 162.56)
 		)
 		(stroke
 			(width 0)
@@ -6227,7 +6227,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 160.02) (xy 54.61 156.21)
+			(xy 54.61 162.56) (xy 54.61 156.21)
 		)
 		(stroke
 			(width 0)
@@ -6387,7 +6387,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 151.13) (xy 72.39 160.02)
+			(xy 72.39 151.13) (xy 72.39 162.56)
 		)
 		(stroke
 			(width 0)
@@ -6467,7 +6467,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 156.21) (xy 59.69 160.02)
+			(xy 59.69 156.21) (xy 59.69 162.56)
 		)
 		(stroke
 			(width 0)
@@ -6487,7 +6487,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 161.29) (xy 81.28 175.26)
+			(xy 77.47 161.29) (xy 77.47 175.26)
 		)
 		(stroke
 			(width 0)
@@ -7017,7 +7017,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 175.26) (xy 106.68 175.26)
+			(xy 77.47 175.26) (xy 106.68 175.26)
 		)
 		(stroke
 			(width 0)
@@ -7287,16 +7287,15 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 69.85 165.1 270)
+		(at 69.85 167.64 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "11e3fc70-aa6d-414c-b9e5-23cb6a9f0911")
 		(property "Reference" "J12"
-			(at 68.58 168.91 90)
+			(at 75.438 168.402 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7304,7 +7303,7 @@
 			)
 		)
 		(property "Value" "GPS"
-			(at 68.58 171.45 90)
+			(at 71.882 170.434 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7312,7 +7311,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical"
-			(at 69.85 165.1 0)
+			(at 69.85 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7321,7 +7320,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 165.1 0)
+			(at 69.85 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7330,7 +7329,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 69.85 165.1 0)
+			(at 69.85 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8001,16 +8000,15 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 57.15 165.1 270)
+		(at 57.15 167.64 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "620a4708-01f7-40a4-aaf6-11c39771dde4")
 		(property "Reference" "J3"
-			(at 55.88 168.91 90)
+			(at 49.022 168.148 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8018,7 +8016,7 @@
 			)
 		)
 		(property "Value" "External Connector"
-			(at 55.88 171.45 90)
+			(at 53.594 170.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8026,7 +8024,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical"
-			(at 57.15 165.1 0)
+			(at 57.15 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8035,7 +8033,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 57.15 165.1 0)
+			(at 57.15 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8044,7 +8042,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 57.15 165.1 0)
+			(at 57.15 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8367,7 +8365,7 @@
 				)
 			)
 		)
-		(property "Value" "SD card selecting jumper"
+		(property "Value" "SD card jumper"
 			(at 230.886 135.636 0)
 			(effects
 				(font
@@ -10327,8 +10325,8 @@
 				)
 			)
 		)
-		(property "Value" "Battery and/or BMS"
-			(at 14.986 155.194 0)
+		(property "Value" "Battery"
+			(at 20.574 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
