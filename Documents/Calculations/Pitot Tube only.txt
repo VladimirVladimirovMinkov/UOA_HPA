@@ -1,0 +1,19 @@
+Psl = Pressure at sea level = 1015hPa or manually programmed in on the day of flight
+Ps = Static Pressure = BME280 in hPa
+Pt = pitot tube pressure = mpxv7002dp pressure differential reading
+Temperature(C) = BME280 temp reading
+Humidity(%) = BME280 humidity reading
+
+Pwv = Pressure of water vapor = 0.01 * H * 6.1121 * exp( (18.678 - T/234.5) * T/(257.14+T) )
+Ad = Air Density = (Ps-Pwv)*100/(287.05*(T+273.15)) + Pwv*100/461.495*(T+273.15)
+
+Airspeed(m/s) = sqrt(200*(Pt)/Ad)
+Altitude(m) = (Psl - Ps)*10
+Vertical speed(m/s) = dAltitude maybe assisted with an accelerometer
+
+https://epartners.co.nz/products/bme-280-spi-i2c-humidity-temperature-and-barometric-pressure-sensor
+https://nz.element14.com/nxp/mpxv7002dp/sensor-pressure-dual-diff-0-02bar/dp/2080499
+https://www.aliexpress.com/item/1005005646318954.html?src=google&pdp_npi=4@dis!NZD!19.65!11.91!!!!!@!12000033872087723!ppc!!!
+
+BME280 needs to be covered in cloth so it reads static pressure not dynamic pressure
+Pitot tube assembly increases accuracy of readings
