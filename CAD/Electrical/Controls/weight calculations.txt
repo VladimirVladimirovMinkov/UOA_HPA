@@ -1,7 +1,7 @@
 Capacitors 3*10 = 30g
-resistor 13*2 = 26g
+resistors 13*2 = 26g
 
-Servo 53*4 = 212g
+Servo 53*2 = 106g
 SD card reader 50g
 BME280 22g
 potentiometer 2*6 = 12g
@@ -12,9 +12,10 @@ GPS 20g
 Cadence Sensor Hall Effect Sensor 17g
 magnets 4*5 = 20g
 Gyroscope 10g
-LCD 50g
-pitot tube assembly 28g
+LCD 50g // might be too heavy
+pitot tube assembly 28g // portably going to use propeller similar weight though
 pressure differential sensor 3g
+Strain gauge 2g *4 = 8g
 
 5V regulator 8g
 3V3 regulator 8g
@@ -23,9 +24,9 @@ pressure differential sensor 3g
 ESP32-WROOM-32E 22g
 
 PCB 80g
-wiring 20*3.7 74g
+wiring 30m*3.7g/m = 111g
 connectors 40*10 = 50g
 
-total 877g
+total 813g
 
 we can reduce this by 100g to 200g using surface mount components 
