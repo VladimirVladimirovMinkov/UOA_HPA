@@ -3,12 +3,12 @@
 '10uf Capacitor' '5'
 'Servo' '2'
 'SD card reader' '1'
-'BME280' '1'
+'BME280' '1' or BMP just don't get the connections confused
 'potentiometer' '2'
 'Battery 3.6V' '6' minimum we want 2
 'Restart/Boot Button' '1'
 'GPS' '1'
-'Cadence Sensor Hall Effect' '1'
+'Cadence Sensor Hall Effect' '4'
 'Gyroscope' '1'
 'LCD' '1'
 'pitot tube assembly' '1'
@@ -32,7 +32,7 @@
 'SD card selecting connector' '1' 1x4
 'Battery Connector' '1' 1x4 we can use a 1x2 if we don't use a charger and make our own battery pack
 'GPS Connector' '1' 1x4
-'Cadence Sensor Connector' '1' 1x3
+'Cadence Sensor Connector' '4' 1x3
 'Gyroscope Connector' '1' 1x4
 'pitot tube assembly Connector' '1' 1x3
 'LCD connector' '1' 1x15 or break it up
@@ -69,7 +69,7 @@ https://surplustronics.co.nz/products/2157-switch-tact-push-button-momentary
 1x
 https://surplustronics.co.nz/products/7255-gps-module-for-arduino-with-antenna
 
-1x
+4x
 https://surplustronics.co.nz/products/2858-hall-effect-sensor-a3144-a3144e
 
 1x
